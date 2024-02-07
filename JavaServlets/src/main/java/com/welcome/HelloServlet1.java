@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Hello
+ * Servlet implementation class HelloServletv1
  */
-@WebServlet("/HelloServlets")
-public class HelloServlets extends HttpServlet {
+@WebServlet("/HelloServletv1")
+public class HelloServlet1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloServlets() {
+    public HelloServlet1() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,17 +28,14 @@ public class HelloServlets extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
 		
+		PrintWriter  printWriter = response.getWriter(); //new PrintWriter();
+	     printWriter.print("<html><body>");
+		 printWriter.print("<h2>Welcome</h2>");
+		 printWriter.print("</body></html>");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		// TODO Auto-generated method stub	
-//		doGet(request, response);
-//	}
-//
 }

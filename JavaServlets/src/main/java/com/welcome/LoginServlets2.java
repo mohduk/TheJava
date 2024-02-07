@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Login
  */
-@WebServlet("/LoginServlets1")
-public class LoginServlets extends HttpServlet {
+@WebServlet("/LoginServlets2")
+public class LoginServlets2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlets() {
+    public LoginServlets2() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,7 @@ public class LoginServlets extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("welcome1.jsp").forward(request, response);
+		request.getRequestDispatcher("welcome2.jsp").forward(request, response);
 	}
 
 }
